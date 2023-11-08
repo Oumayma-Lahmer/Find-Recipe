@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_vertical"
+    android:background="@drawable/bg"
+    android:padding="30dp"
+    tools:context=".MainActivity">
+
+        <EditText
+            android:id="@+id/editTextIngredient"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textSize="25sp"
+            android:textColor="@color/black"
+            android:hint="Enter ingredient"
+            android:textColorHint="@color/black"
+            android:inputType="text"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            />
+
+        <Button
+            android:id="@+id/buttonFindRecipe"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="Find Recipe"
+            android:layout_gravity="center_horizontal"
+            android:textSize="20sp"
+            android:onClick="findRecipe"
+            />
+
+        <TextView
+            android:id="@+id/textViewRecipe"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="16dp"
+            android:text="..."
+            android:textColor="@color/red"
+            android:gravity="center"
+            android:textSize="38sp" />
+
+</LinearLayout>
